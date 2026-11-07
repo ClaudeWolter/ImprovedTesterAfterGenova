@@ -33,7 +33,8 @@ it's a separate compile-time constant, `LED_WIRE0_ON_LEFT`, set per
 
 | Build env | `LED_WIRE0_ON_LEFT` | Wire *k* drawn in column |
 |---|---|---|
-| `hw_rev1`, `hw_rev2` | `false` | `4 - 2k` (wire 0 right) |
+| `hw_rev1` | `false` | `4 - 2k` (wire 0 right). Not verified on hardware |
+| `hw_rev2` | `true` | `2k` (wire 0 left). Verified on the bench, 2026-11-07 (with `TL-V`, F/E upright; `false` swapped the outer wires) |
 | `hw_rev3` | `true` | `2k` (wire 0 left). Verified on the bench, 2026-09-29 |
 
 Wire content (`SetLine`, the good/broken/short/swap/wrong-connection

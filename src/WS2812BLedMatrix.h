@@ -42,11 +42,11 @@ constexpr bool LED_WIRE0_ON_LEFT = false;
 #elif HARDWARE_REV == 2
 constexpr int PIN = 16;
 constexpr const char* LED_LAYOUT_DEFAULT = "TL-V";  // derived from the verified rev2 R/E/F glyph maps
-constexpr bool LED_WIRE0_ON_LEFT = false;
+constexpr bool LED_WIRE0_ON_LEFT = true;  // outer wires were swapped with false (bench, 2026-11-07)
 #elif HARDWARE_REV == 3
 constexpr int PIN = 16;
 constexpr const char* LED_LAYOUT_DEFAULT = "BR-V";  // native D5-D29 on the board bottom (verified with glyphs)
-constexpr bool LED_WIRE0_ON_LEFT = true;  // jack order is mirrored vs rev1/2 (verified on the bench)
+constexpr bool LED_WIRE0_ON_LEFT = true;  // verified on the bench (same wire side as rev2)
 #endif
 constexpr int BUZZERPIN = 22;
 constexpr int RELATIVE_HIGH = HIGH;

@@ -193,7 +193,7 @@ Ohm-based pass/fail colour thresholds.
   hw_rev3 default `BR-V`), which covers every panel rotation/mirroring. Never
   write `m_pixels->setPixelColor()` directly; go through `setUserPixel()`
   (glyphs) or `setWirePixel()` (wire content). Wire content is additionally
-  mirrored by the per-board constant `LED_WIRE0_ON_LEFT` (true on hw_rev3),
+  mirrored by the per-board constant `LED_WIRE0_ON_LEFT` (true on hw_rev2 and hw_rev3),
   which follows the physical jack order. If glyphs are wrong, fix `LedLayout`;
   if only the wire order is wrong, fix `LED_WIRE0_ON_LEFT`.
   Terminal command `ledtest [layout]` verifies a panel. This replaced
